@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+.container{
+    transition: all ease 0.5s;
+    width: 100%;
+    height: 100%;
+    border: solid white;
+    position: relative;
+    
+}
+.biscuit{
+    width: 7%;
+    position: absolute;
+    animation-name: moving_biscuit;
+    animation-duration: 3s, 0.23s;
+    animation-iteration-count: 15;
+    animation-timing-function: ease-in-out;
+}
+.cup-plate{
+    margin-top:20%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    img{
+        width: 20%;
+    }
+   
+}
+/* --animation-- */
+@keyframes moving_biscuit {
+    0%{
+        top: 0;
+        left: 31%;
+        opacity: 1;
+    }
+    25%{
+        top: 61%;
+        left: 31%;
+        opacity: 1;
+    }
+    50%{
+        top: 30%;
+        left: 40%;
+        opacity: 1;
+    }
+    75%{
+        top: 20%;
+        left: 55%;
+        opacity: 1;
+    }
+    100%{
+        top: 59%;
+        left: 60%;
+        
+    }
+}
